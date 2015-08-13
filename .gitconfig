@@ -1,0 +1,30 @@
+[user]
+  name = Vince Verberckt
+  email = ""
+
+[push]
+  default = upstream
+
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+
+[core]
+  editor = vim
+
+[merge]
+  log = true
+
+[commit]
+  template = ~/.gitmessage
+
+[alias]
+  a = add
+  st = status
+  ci = commit -v
+  co = checkout
+  tidy-up = !sh -c 'git remote prune origin && git gc --prune=now && git gc --aggressive && git tag -l | xargs git tag -d && git fetch --tags'
+  count = shortlog -sn
