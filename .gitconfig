@@ -22,6 +22,7 @@
   template = ~/.gitmessage
 
 [alias]
+  m = merge --no-ff
   f = fetch
   a = add
   st = status
