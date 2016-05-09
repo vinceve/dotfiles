@@ -30,3 +30,4 @@
   co = checkout
   tidy-up = !sh -c 'git remote prune origin && git gc --prune=now && git gc --aggressive && git tag -l | xargs git tag -d && git fetch --tags'
   count = shortlog -sn
+  recent = for-each-ref --sort=-committerdate refs/heads/
